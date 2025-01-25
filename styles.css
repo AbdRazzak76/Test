@@ -1,0 +1,197 @@
+:root {
+    --bg-primary: #1c032e;
+    --accent-primary: #8b5cf6; 
+    --accent-secondary: #ec4899;
+    --text-primary: #ffffff;
+    --text-secondary: #d1d5db;
+    --card-bg: #290642;
+    --btn-hover: #a855f7;
+    --grid-line: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    background-image: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 25%, rgba(236, 72, 153, 0.2) 75%), 
+                      repeating-linear-gradient(0deg, var(--grid-line) 0px, var(--grid-line) 1px, transparent 1px, transparent 20px);
+    background-size: cover, 100% 100%;
+    background-attachment: fixed;
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: var(--bg-primary);
+    border-bottom: 2px solid var(--accent-primary);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-secondary);
+}
+
+.btn-login, .btn-signup {
+    background: var(--accent-primary);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-login:hover, .btn-signup:hover {
+    background: var(--btn-hover);
+    transform: scale(1.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: var(--accent-primary);
+    text-shadow: 0 0 10px var(--accent-primary), 0 0 20px var(--accent-secondary);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.btn-get-started {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-get-started:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--accent-primary);
+}
+
+.services {
+    padding: 2rem 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent-secondary);
+    text-shadow: 0 0 10px var(--accent-secondary);
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 0 20px var(--accent-primary), inset 0 0 10px var(--accent-secondary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px var(--accent-primary), inset 0 0 20px var(--accent-secondary);
+}
+
+.how-it-works {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    margin-bottom: 1.5rem;
+    color: var(--accent-primary);
+}
+
+.how-it-works ol {
+    list-style: decimal;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    text-align: left;
+    max-width: 600px;
+}
+
+.footer {
+    background: var(--bg-primary);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--accent-secondary);
+}
